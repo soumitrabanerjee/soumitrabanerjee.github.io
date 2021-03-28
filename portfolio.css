@@ -1,4 +1,4 @@
-/* .square{
+.square{
   width: 90%;
   height: 100px;
   margin-left: 5%;
@@ -6,7 +6,7 @@
   background-color: #00203FFF;
   opacity: 0.1;
   float: none;
-} */
+}
 
 /* font */
 @font-face {
