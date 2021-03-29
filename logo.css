@@ -1,0 +1,18 @@
+.img2{
+    border-radius: 50%;
+    border-color: #ADEFD1FF;
+    margin-left: 7%;
+    margin-right: 10%;
+    width:3%;
+    height: 3%;
+    float: none
+  }
+  .imgelse{
+    border-radius: 50%;
+    border-color: #ADEFD1FF;
+    margin-left: 0%;
+    margin-right: 10%;
+    width:3%;
+    height: 3%;
+    float: none
+  }
