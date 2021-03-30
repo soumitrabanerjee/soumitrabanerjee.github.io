@@ -45,6 +45,7 @@
   font-family: myFont;
   margin-left: 7%;
   margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .a2:hover, .a2:active {
@@ -125,7 +126,7 @@ h1{
   color:#00203FFF;
   margin-left: 7%;
   margin-right: 60%;
-  margin-top: 30%;
+  margin-top: 15%;
   font-size: 300%;
   text-align: left;
   font-family: myFont;
@@ -134,8 +135,8 @@ h1{
 .title{
   color:#00203FFF;
   margin-left: 7%;
-  margin-right: 60%;
-  margin-top: 15%;
+  margin-right: 10%;
+  margin-top: 10%;
   font-size: 300%;
   text-align: left;
   font-family: myFont;
@@ -152,13 +153,41 @@ h1{
   font-family: myFontB;
   text-transform: uppercase;
 }
-.bottom_line2{
+.thinsentence{
   color:#00203FFF;
   margin-left: 7%;
-  margin-right: 60%;
-  margin-top: -15%;
+  margin-right: 7%;
   font-size: 50%;
+  font-size:medium;
   text-align: left;
   font-family: myFont;
+}
+
+.techlist{
+  font-family: myFont;
+  font-size: large;
+  color: #ADEFD1FF;
+  margin-right: 60%;
+  margin-left: 7%;
+}
+
+.tech{
+  color: #00203FFF;
+  padding-left: 10%;
+  text-align: left;
+  margin-left: 0%;
+}
+.tech:hover{
+  background-color: rgba(0, 31, 63, 0.226);
+}
+
+.subtitle{
+  color:#00203FFF;
+  margin-left: 7%;
+  margin-right: 10%;
+  margin-top: 0%;
+  font-size: 100%;
+  text-align: left;
+  font-family: myFontB;
   text-transform: uppercase;
 }

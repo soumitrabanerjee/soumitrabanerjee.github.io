@@ -14,3 +14,11 @@
     height: 40px;
     float: none
   }
+  .techlogo{
+      border-radius: 50%;
+      border-color: #ADEFD1FF;
+      margin-left: 7%;
+      width:30px;
+      height: 30px;
+      float: none
+  }
