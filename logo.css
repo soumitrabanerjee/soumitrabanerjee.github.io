@@ -2,16 +2,35 @@
     border-radius: 50%;
     border-color: #ADEFD1FF;
     margin-left: 7%;
-    width:40px;
-    height: 40px;
-    float: none
+    width: 35px;
+    height: 35px;
+    float: none;
+    margin-bottom: 2%;
   }
+  .img2:hover{
+    border-radius: 50%;
+    border-color: #ADEFD1FF;
+    margin-left: 7%;
+    background-color: blue;
+    float: none;
+    margin-bottom: 2%;
+  }
+  
   .imgelse{
     border-radius: 50%;
     border-color: #ADEFD1FF;
     margin-left: 4px;
-    width:40px;
-    height: 40px;
+    width:35px;
+    height: 35px;
+    float: none;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .imgelse:hover{
+    border-radius: 50%;
+    border-color: #ADEFD1FF;
+    margin-left: 4px;
+    background-color: blue;
     float: none
   }
   .techlogo{
