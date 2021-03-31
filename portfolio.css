@@ -17,6 +17,8 @@
 
 /* font end herer */
 
+
+
 /* link start */
 .a1:link, .a1:visited {
   background-color: #00203FFF;
@@ -93,6 +95,7 @@ h1{
   margin-left: 50%;
   margin-right: 10%;
   margin-top: -20%;
+  margin-bottom: 5%;
   width:35%;
   height: 35%;
 }
