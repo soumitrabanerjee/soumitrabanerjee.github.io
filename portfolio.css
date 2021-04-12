@@ -1,44 +1,12 @@
 
 /* font */
-@font-face {
-  font-family: myFont;
-  src: url(font/oswald/oswald.light.ttf);
-}
 
-@font-face{
-  font-family: myFontB;
-  src:url(font/oswald/oswald.bold.ttf) 
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-@font-face{
-  font-family: myFontR;
-  src:url(font/oswald/oswald.regular.ttf) 
-}
 
-@font-face{
-  font-family: myFont2-light;
-  src: url(font/Montserrat/Montserrat-Thin.ttf)
-}
-
-@font-face{
-  font-family: myFont2-R;
-  src: url(font/Montserrat/Montserrat-Regular.ttf)
-}
-
-@font-face{
-  font-family: myFont2-B;
-  src: url(font/Montserrat/Montserrat-Bold.ttf)
-}
-
-@font-face{
-  font-family: myFont2-M;
-  src: url(font/Montserrat/Montserrat-Medium.ttf)
-}
-
-@font-face{
-  font-family: myFont2-MI;
-  src: url(font/Montserrat/Montserrat-MediumItalic.ttf)
-}
+/* @font-face {
+ (font/Montserrat/Montserrat-MediumItalic.ttf)
+} */
 /* font end herer */
 
 
@@ -51,7 +19,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -68,7 +37,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   margin-left: 7%;
   margin-top: 2%;
   margin-bottom: 5%;
@@ -92,7 +62,7 @@ h1{
   margin-left: 5%;
   margin-right: 60%;
   text-align: center;
-  font-family: myFont;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   opacity: 20%;
 }
@@ -101,7 +71,7 @@ h1{
   color: #00203FFF;
   margin-left: 7%;
   margin-right: 7%;
-  font-family: myFont2-light;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 30%;  
 }
 
@@ -109,7 +79,7 @@ h1{
   color: #00203FFF;
   margin-left: 7%;
   margin-right: 7%;
-  font-family: myFont2-M;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0%;
 }
 
@@ -131,13 +101,15 @@ h1{
   margin-top: 15%;
   font-size: 200%;
   text-align: left;
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .tagline{
   color: #00203FFF;
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   margin-left: 7%;
   margin-right: 60%;
   margin-top: 0%;
@@ -154,9 +126,10 @@ h1{
   margin-left: 7%;
   margin-right: 60%;
   margin-top: 15%;
-  font-size: 300%;
+  font-size: 250%;
   text-align: left;
-  font-family: myFont2-B;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .title{
@@ -164,9 +137,10 @@ h1{
   margin-left: 7%;
   margin-right: 10%;
   margin-top: 10%;
-  font-size: 300%;
+  font-size: 250%;
   text-align: left;
-  font-family: myFont2-B;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -177,7 +151,7 @@ h1{
   margin-top: 15%;
   font-size: 300%;
   text-align: left;
-  font-family: myFont2-B;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .thinsentence{
@@ -187,12 +161,14 @@ h1{
   font-size: 50%;
   font-size:medium;
   text-align: left;
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .techlist{
-  font-family: myFont2-R;
+  font-family: 'Montserrat', sans-serif;
   font-size: medium;
+  font-weight: 300;
   color: #ADEFD1FF;
   margin-right: 7%;
   margin-left: 7%;
@@ -215,6 +191,7 @@ h1{
   margin-top: 0%;
   font-size: 100%;
   text-align: left;
-  font-family: myFont2-M;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
 }
