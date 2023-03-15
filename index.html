@@ -1,126 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" href="logos/github.png">
-        <link rel="stylesheet" href="portfolio.css">
-        <link rel="stylesheet" href="logo.css">
-        <link rel="stylesheet" href="blogs.css">
-        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
-    </head>
-    
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    
-    
-    <body>
-        <div class="square">
-        <div>
-            <a class="a1" href="#">Resume</a> 
-        </div>
-        
-        <div class="nammetagsetup">
-            <div class="name">Soumitra Banerjee</div>
-            <div class="tagline">
-                Data Engineer II at American Express.
-            </div>
-                <img class="img1" src="photos/mypic.jpg">
-        </div>
-        
-        
-        
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-        <div class="first_title">Bio</div>
-        <p class="thinsentence">
-            Hello, this is Soumitra. A computer science guy, immensely interested in Data Science and as the sector is booming, 
-            would love to exploit the career possibilities through this domain.
-        </p>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="1.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+<!--  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p> -->
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-       
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Soumitra.</h1>
+    <p>Data Engineer II at American Express</p>
+    <img src="1.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-    
-        <div class="title"> Tech I'm familiar with</div>
-        <ol class="techlist">
-            <span>
-                <li class="tech"><img class="techlogo" src="logos/java.png"> Java</li>
-                <li class="tech"><img class="techlogo" src="logos/scala.png"> Scala</li>
-                <li class="tech"><img class="techlogo" src="logos/databricks.png"> Databricks</li>
-                <li class="tech"><img class="techlogo" src="logos/hadoop.png"> Hadoop</li>
-                <li class="tech"><img class="techlogo" src="logos/hive.svg" > Hive</li>
-                <li class="tech"><img class="techlogo" src="logos/mysql.png"> SQL</li>
-                <li class="tech"><img class="techlogo" src="logos/spark.png"> PySpark</li>
-                <li class="tech"><img class="techlogo" src="logos/python.png"> Python</li>
-            </span>           
-        </ol>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Soumitra Banerjee</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Current Big Data Engineer at American Express with 2.5+ years of professional experience specializing in development and deployment of big
+	data components via Spark, Hadoop, Hive, Scala technologies. Excellent planning skills in setting and achieving goals, including meeting tight
+	deadlines.Interested in devising a better problem‑solving method for challenging tasks, and learning new technologies and tools if the need arises.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Big Data Tech</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Communication</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Creativity</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Collaboration</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div><br>
 
-        <div class="title"> My Previous and Present Company</div>
-        <ol class="techlist">
-            <span>
-                <li class="tech"><img class="techlogo" src="logos/cts.jpg"> Cognizant (12 Sep 2020 - 23 Sept 2022) </li>
-                <li class="tech"><img class="techlogo" src="logos/amex.png"> American Express (27 Sept2022 - Present) </li>
-            </span>           
-        </ol>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2.5+ years</span><br>
+        Domain Experience
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+ Months</span><br>
+        Finance/Banking
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2 years</span><br>
+        Life Science/Health care
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">6</span><br>
+        Projects
+      </div>
+    </div>
 
-        <div class="title">Education</div>
-        <p class="college">Bachelor's Degree in Computer Science & Engineering</p>
-        <p class="thinsentence">University of Engineering and Management, Kolkata
-            <br>
-            2016-2020
-        </p>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
 
-        <div class="title">Experience</div>
-        <!-- <p class="p2"> -->
-            <div class="subtitle"> Internship </div>
-            <p class="thinsentence"> I have done internship at Cognizant for 4 months and learned SQL and Java from industry experts </p>
-            <a class="a2" href="docs/internship.pdf">Internship completion mail</a>
-
-            <div class="subtitle">Work Experience</div>
-            <p class="thinsentence"> Currently I'm working as a Data Engineer II at American Express. I have 2+ years of industry experience in 
-                Big Data domain. The technologies I am majorly working on includes Databricks, Scala, Spark, Hadoop, Hive, Postgres and Aurora DB on Unix 
-                platform.</p>
-        <!-- </p> -->
-
-        <div class="title">My Blogs</div>
-        <ul class="list" style="list-style-type:none;">
-            <li>
-                <a class="blog" href="https://dev.to/soumitrabanerjee/big-data-what-s-the-big-deal-2h1e">Big Data, What's the Big Deal</a>
-                <br>
-                <a href="https://dev.to/soumitrabanerjee/big-data-what-s-the-big-deal-2h1e"><img class="blogpic" src="photos/blog1.png"></a>
-                <br>
-                <p style="font-family:myFont; color:#00203FFF; font-size: small;">Mar 13, 2021</p>
-            </li>
-            <li>
-                <a class="blog" href="https://dev.to/soumitrabanerjee/pivot-unpivot-2bne">PIVOT-UNPIVOT</a>
-                <br>
-                <a href="https://dev.to/soumitrabanerjee/pivot-unpivot-2bne"><img class="blogpic" src="photos/pivot.png"></a>
-                <br>
-                <p style="font-family:myFont; color:#00203FFF; font-size: small;">May 1, 2021</p>
-            </li>
-            <li>
-                <a class="blog" href="https://dev.to/soumitrabanerjee/shhh-hadoop-is-working-932">Shhh! Hadoop is working</a>
-                <br>
-                <a href="https://dev.to/soumitrabanerjee/shhh-hadoop-is-working-932"><img class="blogpic" src="photos/blog3.jpg"></a>
-                <br>
-                <p style="font-family:myFont; color:#00203FFF; font-size: small;">July 12, 2021</p>
-            </li>
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Big Data</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Tools</li>
+          <li class="w3-padding-16">Airflow</li>
+          <li class="w3-padding-16">Databricks</li>
+          <li class="w3-padding-16">Git</li>
+          <li class="w3-padding-16">Jenkins</li>
+	  <li class="w3-padding-16">Putty</li>
         </ul>
+      </div>
 
-        <div class="bottom_line1">My Inbox is Always Open! Let's Talk</div>
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Core Tech</li>
+          <li class="w3-padding-16">Spark</li>
+          <li class="w3-padding-16">Scala</li>
+          <li class="w3-padding-16">HIVE</li>
+          <li class="w3-padding-16">Hadoop</li>
+    	  <li class="w3-padding-16">Java</li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
 
-        <br>
-        <br> 
-        
-        <div>          
-            <a href="https://www.linkedin.com/in/soumitra-banerjee/"><img class="img2" src="logos/linkedin.png"></a>
-            <a href="https://github.com/soumitrabanerjee/"><img class="imgelse" src="logos/github.png"></a>
-            <a href="mailto:soumitra.banerjee@hotmail.com"><img class="imgelse" src="logos/mail.png"></a>
-            <a href="https://dev.to/soumitrabanerjee"><img class="imgelse" src="logos/dev.svg"></a>
-            <a href="https://twitter.com/smtro_banerjee"><img class="imgelse" src="logos/twitter.png"></a>
-            <a href="https://m.me/soumitro.banerjee.1/"><img class="imgelse" src="logos/messenger.png"></a>
-            <a href="https://api.whatsapp.com/send?phone=+917003190619&text=Hi"><img class="imgelse" src="logos/whatsapp.png"></a>
-        </div>
-        
-    </body>
-    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Experience</h3>
+    <img src="amex.svg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">American Express.</span> Data Engineer II.</p>
+    <p>5 Months as Data Engineer.</p><br>
+
+    <img src="cts.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Cognizant.</span> Programmer Analyst.</p>
+    <p>2 years as Data Engineer.</p>
+  <!-- End About Section -->
+  </div>
+
+<!--
+
+-->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Let's get in touch. Send me a message:</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bangalore, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7003190619</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: soumitra.banerjee@hotmail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://m.me/soumitro.banerjee.1/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://github.com/soumitrabanerjee/"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=+917003190619&text=Hi"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    <a href="mailto:soumitra.banerjee@hotmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/smtro_banerjee"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/soumitra-banerjee/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
