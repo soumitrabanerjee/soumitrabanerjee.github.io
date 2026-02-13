@@ -9,17 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #080b14;
-      --bg-soft: #11182b;
-      --surface: rgba(255, 255, 255, 0.06);
-      --surface-strong: rgba(255, 255, 255, 0.09);
-      --text: #f3f6ff;
-      --muted: #adb7d2;
-      --accent: #78a6ff;
-      --accent-2: #b58dff;
-      --ring: rgba(131, 163, 255, 0.35);
-      --border: rgba(255, 255, 255, 0.12);
-      --shadow: 0 24px 50px rgba(0, 0, 0, 0.42);
+      --bg: #f7efe3;
+      --bg-soft: #efe3d4;
+      --surface: rgba(255, 250, 240, 0.72);
+      --surface-strong: rgba(255, 248, 235, 0.92);
+      --text: #3b2f25;
+      --muted: #7a6a58;
+      --accent: #c88b5a;
+      --accent-2: #e2b98b;
+      --ring: rgba(200, 139, 90, 0.25);
+      --border: rgba(120, 90, 60, 0.18);
+      --shadow: 0 20px 35px rgba(110, 82, 53, 0.18);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,9 +28,9 @@
     body {
       font-family: "Inter", sans-serif;
       background:
-        radial-gradient(50% 45% at 10% 0%, rgba(122, 103, 255, 0.3), transparent 70%),
-        radial-gradient(45% 45% at 90% 10%, rgba(67, 143, 255, 0.25), transparent 72%),
-        linear-gradient(180deg, #0a1021 0%, var(--bg) 36%);
+        radial-gradient(50% 45% at 10% 0%, rgba(232, 198, 156, 0.42), transparent 70%),
+        radial-gradient(45% 45% at 90% 10%, rgba(214, 168, 122, 0.35), transparent 72%),
+        linear-gradient(180deg, #fff8ef 0%, var(--bg) 40%);
       color: var(--text);
       min-height: 100vh;
       line-height: 1.7;
@@ -40,8 +40,8 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      opacity: 0.08;
-      background-image: radial-gradient(#fff 0.3px, transparent 0.3px);
+      opacity: 0.04;
+      background-image: radial-gradient(#b49371 0.3px, transparent 0.3px);
       background-size: 4px 4px;
       z-index: -1;
     }
@@ -54,9 +54,9 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(8, 11, 20, 0.72);
+      background: rgba(251, 242, 229, 0.78);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(132, 100, 67, 0.15);
     }
 
     nav {
@@ -83,7 +83,7 @@
     }
 
     .links { display: flex; gap: 1.3rem; color: var(--muted); font-size: 0.95rem; }
-    .links a:hover { color: #fff; }
+    .links a:hover { color: #2f2218; }
 
     .hero {
       padding: 4.8rem 0 3rem;
@@ -100,8 +100,8 @@
       padding: 0.4rem 0.8rem;
       border-radius: 999px;
       border: 1px solid var(--border);
-      color: #d5ddf7;
-      background: rgba(255, 255, 255, 0.05);
+      color: #7a5f46;
+      background: rgba(255, 248, 236, 0.9);
       font-size: 0.86rem;
     }
 
@@ -114,7 +114,7 @@
     }
 
     .gradient-text {
-      background: linear-gradient(120deg, #c8daff, #d9c2ff 55%, #8fb5ff);
+      background: linear-gradient(120deg, #9a5f34, #b27a4d 55%, #7e4e2c);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -137,16 +137,16 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
     }
 
-    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: rgba(255,255,255,0.35); }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: rgba(120,90,60,0.35); }
     .btn.primary {
       border: none;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #081123;
+      color: #fffaf3;
       font-weight: 700;
     }
 
     .profile {
-      background: linear-gradient(165deg, rgba(255,255,255,0.14), rgba(255,255,255,0.05));
+      background: linear-gradient(165deg, rgba(255,250,241,0.95), rgba(245,229,206,0.78));
       border: 1px solid var(--border);
       border-radius: 22px;
       padding: 1rem;
@@ -158,7 +158,7 @@
       max-height: 460px;
       object-fit: cover;
       border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.15);
+      border: 1px solid rgba(141,106,69,0.2);
     }
 
     .quick {
@@ -170,11 +170,11 @@
 
     .chip {
       font-size: 0.82rem;
-      color: #d5dffa;
-      border: 1px solid rgba(255,255,255,0.18);
+      color: #7b6048;
+      border: 1px solid rgba(144,108,73,0.22);
       border-radius: 999px;
       padding: 0.3rem 0.58rem;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255,248,236,0.85);
     }
 
     section { padding: 1.35rem 0; }
@@ -201,8 +201,8 @@
     .stat {
       padding: 0.85rem;
       border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(137,103,70,0.16);
+      background: rgba(255,248,236,0.85);
       text-align: center;
     }
 
@@ -220,9 +220,9 @@
     .skill {
       padding: 0.38rem 0.66rem;
       border-radius: 999px;
-      background: rgba(120, 166, 255, 0.15);
-      border: 1px solid rgba(138, 172, 255, 0.35);
-      color: #dce7ff;
+      background: rgba(200, 139, 90, 0.16);
+      border: 1px solid rgba(157, 111, 72, 0.3);
+      color: #5d4532;
       font-size: 0.84rem;
     }
 
@@ -238,15 +238,15 @@
       align-items: start;
       padding: 0.9rem;
       border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(139,104,69,0.18);
+      background: rgba(255,248,236,0.85);
     }
 
     .job img {
       width: 42px;
       height: 42px;
       border-radius: 10px;
-      background: rgba(255,255,255,0.92);
+      background: rgba(255,252,247,0.95);
       object-fit: contain;
       padding: 5px;
     }
@@ -255,8 +255,8 @@
       margin: 1.5rem 0 2.6rem;
       padding: 1.2rem;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(126,161,255,0.2), rgba(181,141,255,0.14));
-      border: 1px solid rgba(255,255,255,0.22);
+      background: linear-gradient(135deg, rgba(241,217,188,0.75), rgba(233,201,164,0.68));
+      border: 1px solid rgba(139,103,67,0.22);
     }
 
     .socials {
@@ -264,10 +264,10 @@
       flex-wrap: wrap;
       gap: 0.9rem;
       margin-top: 0.7rem;
-      color: #d6e2ff;
+      color: #6f5540;
     }
 
-    .socials a:hover { color: #fff; text-decoration: underline; }
+    .socials a:hover { color: #2d2118; text-decoration: underline; }
 
     @media (max-width: 920px) {
       .hero, .two-col { grid-template-columns: 1fr; }
