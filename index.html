@@ -1,176 +1,379 @@
 <!DOCTYPE html>
-<html>
-<title>Home | Soumitra</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumitra Banerjee | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d1a;
+      --panel: rgba(255, 255, 255, 0.07);
+      --text: #ecf2ff;
+      --muted: #a5b2d3;
+      --accent: #74a1ff;
+      --accent-2: #8f6bff;
+      --border: rgba(255, 255, 255, 0.14);
+      --shadow: 0 20px 40px rgba(4, 8, 24, 0.5);
+    }
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="profile_picture/profile_pic_2024.jpeg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Soumitra.</h1>
-    <p>Software Engineer II at American Express</p>
-    <img src="profile_picture/profile_pic_2024.jpeg" alt="boy" class="w3-image" width="463px" height="539px">
-  </header>
+    body {
+      font-family: "Inter", sans-serif;
+      background: radial-gradient(circle at 15% 10%, #1f2c57 0, transparent 35%),
+                  radial-gradient(circle at 85% 0, #3b1f80 0, transparent 33%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Soumitra Banerjee</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Current Big Data Engineer at American Express with 5.4+ years of professional experience specializing in development and deployment of big
-	data components via Spark, Hadoop, Hive, Scala technologies. Excellent planning skills in setting and achieving goals, including meeting tight
-	deadlines.Interested in devising a better problem‑solving method for challenging tasks, and learning new technologies and tools if the need arises.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Big Data Tech</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+      background: rgba(9, 13, 26, 0.72);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.3rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover,
+    .contact-links a:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 4.5rem 0 2.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .tag {
+      width: fit-content;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #c8d6ff;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      margin-bottom: 0.9rem;
+    }
+
+    .subtitle {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 52ch;
+    }
+
+    .cta-group {
+      margin-top: 1.8rem;
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.68rem 1.15rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      border: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .profile-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1.2rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: min(100%, 300px);
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .section {
+      padding: 1.8rem 0;
+    }
+
+    .section h2 {
+      font-size: 1.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+    }
+
+    .card p,
+    .about p,
+    .muted {
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+    }
+
+    .chip {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: #d8e2ff;
+    }
+
+    .experience-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .experience-item img {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 4px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 0.9rem;
+      text-align: center;
+    }
+
+    .stat strong {
+      font-size: 1.2rem;
+      display: block;
+    }
+
+    footer {
+      padding: 2rem 0 2.4rem;
+      color: var(--muted);
+    }
+
+    .contact-links {
+      margin-top: 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 3rem;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="#home">Soumitra Banerjee</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <p class="w3-wide">Communication</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+  </nav>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="tag">Software Engineer II @ American Express</p>
+          <h1>Designing reliable data platforms for high-impact products.</h1>
+          <p class="subtitle">
+            I'm Soumitra, a Big Data engineer with 5+ years of experience building and scaling data pipelines using Spark, Hadoop, Hive, Scala, and Java.
+            I love combining clean architecture with practical execution to solve business-critical problems.
+          </p>
+          <div class="cta-group">
+            <a class="btn primary" href="#contact">Let's Connect</a>
+            <a class="btn" href="docs/internship.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <img src="profile_picture/profile_pic_2024.jpeg" alt="Soumitra Banerjee portrait">
+          <p class="muted" style="margin-top: 0.8rem;">Bangalore, India · Open to impactful data engineering roles</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Currently working as a Big Data Engineer at American Express with domain expertise in finance and healthcare. I enjoy building distributed data components,
+          improving performance bottlenecks, and mentoring teams toward engineering excellence.
+        </p>
+        <div class="stats">
+          <div class="stat"><strong>5.4+</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>3+</strong><span>Years in AmEx</span></div>
+          <div class="stat"><strong>2+</strong><span>Years in Banking</span></div>
+          <div class="stat"><strong>6</strong><span>Major Projects</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Technical Stack</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Core Technologies</h3>
+          <div class="skills">
+            <span class="chip">Spark</span><span class="chip">Scala</span><span class="chip">Hive</span><span class="chip">Hadoop</span><span class="chip">Java</span><span class="chip">Python</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Tools & Platforms</h3>
+          <div class="skills">
+            <span class="chip">Databricks</span><span class="chip">Airflow</span><span class="chip">Jenkins</span><span class="chip">Git</span><span class="chip">Oracle</span><span class="chip">MySQL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="experience-item">
+            <img src="logos/amex.svg" alt="American Express logo">
+            <div>
+              <h3>American Express</h3>
+              <p class="muted">Software Engineer II · 3+ years</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="experience-item">
+            <img src="logos/cts.png" alt="Cognizant logo">
+            <div>
+              <h3>Cognizant</h3>
+              <p class="muted">Programmer Analyst · 2 years</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container" id="contact">
+    <h2>Let's build something meaningful.</h2>
+    <p>Email: <a href="mailto:iam.soumitrab@gmail.com">iam.soumitrab@gmail.com</a> · Phone: <a href="tel:+917003190619">+91 7003190619</a></p>
+    <div class="contact-links">
+      <a href="https://github.com/soumitrabanerjee/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/soumitra-banerjee/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/smtro_banerjee" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://m.me/soumitro.banerjee.1/" target="_blank" rel="noopener">Messenger</a>
+      <a href="https://api.whatsapp.com/send?phone=+917003190619&text=Hi" target="_blank" rel="noopener">WhatsApp</a>
     </div>
-    <p class="w3-wide">Creativity</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Collaboration</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4+ years</span><br>
-        Domain Experience
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2+ Years</span><br>
-        Finance/Banking
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2 years</span><br>
-        Life Science/Health care
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">6</span><br>
-        Projects
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i><a href="resume/CV_SoumitraBanerjee.pdf">Download Resume</a>
-    </button>
-
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Big Data</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Tools</li>
-          <li class="w3-padding-16">Airflow</li>
-          <li class="w3-padding-16">Databricks</li>
-          <li class="w3-padding-16">Git</li>
-          <li class="w3-padding-16">Jenkins</li>
-	  <li class="w3-padding-16">Putty</li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Core Tech</li>
-          <li class="w3-padding-16">Spark</li>
-          <li class="w3-padding-16">Scala</li>
-          <li class="w3-padding-16">HIVE</li>
-          <li class="w3-padding-16">Hadoop</li>
-    	  <li class="w3-padding-16">Java</li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Experience</h3>
-    <img src="logos/amex.svg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">American Express.</span> Software Engineer II.</p>
-    <p>3+ Years as Software Engineer.</p><br>
-
-    <img src="logos/cts.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Cognizant.</span> Programmer Analyst.</p>
-    <p>2 years as Data Engineer.</p>
-  <!-- End About Section -->
-  </div>
-
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Let's get in touch. Send me a message:</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bangalore, India</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7003190619</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: iam.soumitrab@gmail.com</p>
-    </div><br>
-  <!-- End Contact Section -->
-  </div>
-
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://m.me/soumitro.banerjee.1/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://github.com/soumitrabanerjee/"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=+917003190619&text=Hi"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
-    <a href="mailto:iam.soumitrab@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/smtro_banerjee"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/soumitra-banerjee/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <!-- End footer -->
   </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
 </body>
 </html>
-
-
